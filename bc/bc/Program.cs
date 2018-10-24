@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace bc
 {
@@ -10,15 +6,16 @@ namespace bc
     {
         static void Main(string[] args)
         {
-            if(args.Length == 0)
+            int number = -1;
+            while(number < 0)
             {
-                Console.WriteLine("no number provided!");
-                return;
+                Console.WriteLine("Please give me a number >=0");
+                number = int.Parse(Console.ReadLine());
+
             }
 
-            int number = 0;
             
-            number = int.Parse(args[0]);
+            
             Console.WriteLine($"the Number you gave is{number}");
 
             string result = Convert(number);
