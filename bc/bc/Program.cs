@@ -10,7 +10,15 @@ namespace bc
     {
         static void Main(string[] args)
         {
+            if(args.Length == 0)
+            {
+                Console.WriteLine("no number provided!");
+                return;
+            }
 
+            int number = 0;
+            
+            number = int.Parse(args[0]);
         }
     }
 }
